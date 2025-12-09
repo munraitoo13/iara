@@ -1,5 +1,7 @@
+from iara.models.patient import PatientInfo, TranscriptItem
+
 from enum import Enum, auto
-from typing import Optional, List
+from typing import List
 
 from pydantic import BaseModel, Field
 
@@ -12,18 +14,6 @@ class ConversationState(Enum):
     GATHERING_COMPLAINT = auto()
     CONFIRMATION = auto()
     END = auto()
-
-class PatientInfo(BaseModel):
-    full_name: Optional[str] = None
-    date_of_birth: Optional[str] = None
-    address: Optional[str] = None
-    payer_name: Optional[str] = None
-    insurance_id: Optional[str] = None
-    chief_complaint: Optional[str] = None
-
-class TranscriptItem(BaseModel):
-    actor: str
-    message: str
 
 class ConversationStateData(BaseModel):
     state: ConversationState = ConversationState.GATHERING_NAME

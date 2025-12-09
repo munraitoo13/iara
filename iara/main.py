@@ -19,6 +19,5 @@ def main():
         response = agent.respond(user_input)
         print("Iara:", response)
 
-
 if __name__ == "__main__":
     main()
