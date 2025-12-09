@@ -1,64 +1,66 @@
-Iara (Sim, um trocadilho com "IA") é uma assistente de recepção virtual para coletar informações de visitantes e agendar consultas médicas de forma eficiente.
+# Iara
 
-## Funcionalidades
+Iara (a pun on "IA", the Portuguese acronym for AI) is a proof-of-concept for a virtual receptionist assistant. Its primary goal is to streamline the front-desk process by efficiently gathering visitor information, with a long-term vision of handling medical appointment scheduling. This project serves as an experimental platform for developing conversational AI solutions in clinical environments.
 
-- Coleta de informações do visitante, como nome, endereço e motivo da visita.
+## Core Features
 
-## Funcionalidades Futuras (TBD)
+- **Visitor Information Gathering:** Collects essential details from visitors, including name, address, and the purpose of their visit.
 
-- Agendamento de consultas médicas.
-- Integração com calendários para evitar conflitos de horários.
-- Envio de lembretes de consultas via e-mail ou SMS.
+## Future Roadmap (To Be Developed)
 
-## Nota
+- **Appointment Scheduling:** Allow patients to book medical appointments directly through the assistant.
+- **Calendar Integration:** Sync with existing calendar systems to avoid scheduling conflicts.
+- **Automated Reminders:** Send appointment reminders to patients via email or SMS.
 
-É UM PROJETO EXPERIMENTAL! O uso de tokens é alto intencionalmente para testes e desenvolvimento. Não é recomendado para uso em produção.
+## ⚠️ Disclaimer
 
-## Tecnologias Utilizadas
+This is an **experimental project**. Token usage is intentionally high for testing and development purposes. It is **not recommended for production use**.
+
+## Tech Stack
 
 - Python 3.13
 - Pydantic
 - Google GenAI SDK
 
-## Instalação
+## Installation
 
-Siga os passos abaixo para configurar e instalar o projeto localmente:
+Follow the steps below to set up and install the project locally:
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
 
     ```bash
     git clone https://github.com/your-username/iara.git
     cd iara
     ```
 
-2.  **Crie e ative o ambiente virtual:**
+2.  **Create and activate the virtual environment:**
 
     ```bash
     uv venv
     source .venv/bin/activate
     ```
 
-3.  **Instale as dependências:**
+3.  **Install dependencies:**
 
     ```bash
     uv pip install -r requirements.txt
-    # ou se estiver usando uv.lock
+    # or if you are using uv.lock
     uv pip install -r uv.lock
     ```
 
-    _Nota: O arquivo `requirements.txt` pode precisar ser gerado a partir do `uv.lock` ou `pyproject.toml`._
+    _Note: The `requirements.txt` file may need to be generated from `uv.lock` or `pyproject.toml`._
 
-4.  **Configure as variáveis de ambiente:**
+4.  **Configure environment variables:**
 
-    Copie o arquivo `.env.example` para `.env` e preencha com suas credenciais, especialmente a chave da API do Google GenAI.
+    Copy the `.env.example` file to `.env` and fill in your credentials, especially the Google GenAI API key.
 
     ```bash
     cp .env.example .env
     ```
 
-## Como Rodar
+## How to Run
 
-Para executar o projeto, certifique-se de que o ambiente virtual está ativado e execute o arquivo `main.py`:
+To run the project, make sure the virtual environment is activated and execute the `main.py` file:
 
 ```bash
 source .venv/bin/activate
