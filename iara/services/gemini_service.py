@@ -1,4 +1,4 @@
-from config import settings
+from iara.config import settings
 
 from typing import List
 

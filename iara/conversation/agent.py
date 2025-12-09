@@ -1,6 +1,6 @@
-from state import ConversationStateData, TranscriptItem, ConversationState
+from iara.conversation.state import ConversationStateData, TranscriptItem, ConversationState
 
-from gemini_service import GeminiService
+from iara.services.gemini_service import GeminiService
 
 
 class Agent:
