@@ -1,4 +1,4 @@
-from iara.models.patient import PatientInfo, TranscriptItem
+from models.patient import PatientInfo, TranscriptItem
 
 from enum import Enum, auto
 from typing import List

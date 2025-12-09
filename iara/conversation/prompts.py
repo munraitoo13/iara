@@ -1,4 +1,4 @@
-from iara.conversation.state import ConversationState
+from conversation.state import ConversationState
 
 VALIDATION_PROMPTS = {
     ConversationState.GATHERING_DOB: (

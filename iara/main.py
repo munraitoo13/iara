@@ -1,4 +1,4 @@
-from iara.conversation.agent import Agent
+from conversation.agent import Agent
 
 def main():
     agent = Agent()

@@ -1,6 +1,6 @@
-from iara.conversation.prompts import PROMPT_BY_STATE, RETRY_MESSAGES, VALIDATION_PROMPTS
-from iara.conversation.state import ConversationStateData, TranscriptItem, ConversationState
-from iara.services.gemini_service import GeminiService
+from conversation.prompts import PROMPT_BY_STATE, RETRY_MESSAGES, VALIDATION_PROMPTS
+from conversation.state import ConversationStateData, TranscriptItem, ConversationState
+from services.gemini_service import GeminiService
 
 
 

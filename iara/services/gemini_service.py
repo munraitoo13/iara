@@ -1,5 +1,5 @@
-from iara.config import settings
-from iara.conversation.prompts import SYSTEM_PROMPT
+from config import settings
+from conversation.prompts import SYSTEM_PROMPT
 
 from typing import List
 
