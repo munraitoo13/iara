@@ -12,7 +12,7 @@ Iara (a pun on "IA", the Portuguese acronym for AI) is a proof-of-concept for a 
 - **Calendar Integration:** Sync with existing calendar systems to avoid scheduling conflicts.
 - **Automated Reminders:** Send appointment reminders to patients via email or SMS.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This is an **experimental project**. Token usage is intentionally high for testing and development purposes. It is **not recommended for production use**.
 
